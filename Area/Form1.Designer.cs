@@ -41,6 +41,14 @@
             areaTxtBox = new TextBox();
             topTxtBox = new TextBox();
             topLabel = new Label();
+            fileMenu = new MenuStrip();
+            choiceToolStripMenuItem = new ToolStripMenuItem();
+            rectangleToolStripMenuItem = new ToolStripMenuItem();
+            circleToolStripMenuItem = new ToolStripMenuItem();
+            squareToolStripMenuItem = new ToolStripMenuItem();
+            clearToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            fileMenu.SuspendLayout();
             SuspendLayout();
             // 
             // areaTitle
@@ -176,6 +184,53 @@
             topLabel.Text = "Height";
             topLabel.Click += topLabel_Click;
             // 
+            // fileMenu
+            // 
+            fileMenu.ImageScalingSize = new Size(19, 19);
+            fileMenu.Items.AddRange(new ToolStripItem[] { choiceToolStripMenuItem, clearToolStripMenuItem, exitToolStripMenuItem });
+            fileMenu.Location = new Point(0, 0);
+            fileMenu.Name = "fileMenu";
+            fileMenu.Size = new Size(914, 28);
+            fileMenu.TabIndex = 17;
+            fileMenu.Text = "File Menu";
+            // 
+            // choiceToolStripMenuItem
+            // 
+            choiceToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { rectangleToolStripMenuItem, circleToolStripMenuItem, squareToolStripMenuItem });
+            choiceToolStripMenuItem.Name = "choiceToolStripMenuItem";
+            choiceToolStripMenuItem.Size = new Size(68, 24);
+            choiceToolStripMenuItem.Text = "Choice";
+            // 
+            // rectangleToolStripMenuItem
+            // 
+            rectangleToolStripMenuItem.Name = "rectangleToolStripMenuItem";
+            rectangleToolStripMenuItem.Size = new Size(157, 26);
+            rectangleToolStripMenuItem.Text = "Rectangle";
+            // 
+            // circleToolStripMenuItem
+            // 
+            circleToolStripMenuItem.Name = "circleToolStripMenuItem";
+            circleToolStripMenuItem.Size = new Size(157, 26);
+            circleToolStripMenuItem.Text = "Circle";
+            // 
+            // squareToolStripMenuItem
+            // 
+            squareToolStripMenuItem.Name = "squareToolStripMenuItem";
+            squareToolStripMenuItem.Size = new Size(157, 26);
+            squareToolStripMenuItem.Text = "Square";
+            // 
+            // clearToolStripMenuItem
+            // 
+            clearToolStripMenuItem.Name = "clearToolStripMenuItem";
+            clearToolStripMenuItem.Size = new Size(57, 24);
+            clearToolStripMenuItem.Text = "Clear";
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(47, 24);
+            exitToolStripMenuItem.Text = "Exit";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
@@ -194,8 +249,13 @@
             Controls.Add(areaLbl);
             Controls.Add(witdthLbl);
             Controls.Add(areaTitle);
+            Controls.Add(fileMenu);
+            MainMenuStrip = fileMenu;
             Name = "Form1";
+            Text = "C# Area Form";
             Load += Form1_Load;
+            fileMenu.ResumeLayout(false);
+            fileMenu.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -222,5 +282,12 @@
         private TextBox heightTxtBox;
         private TextBox topTxtBox;
         private Label topLabel;
+        private MenuStrip fileMenu;
+        private ToolStripMenuItem choiceToolStripMenuItem;
+        private ToolStripMenuItem rectangleToolStripMenuItem;
+        private ToolStripMenuItem circleToolStripMenuItem;
+        private ToolStripMenuItem squareToolStripMenuItem;
+        private ToolStripMenuItem clearToolStripMenuItem;
+        private ToolStripMenuItem exitToolStripMenuItem;
     }
 }
