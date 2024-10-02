@@ -3,7 +3,7 @@
 
    Gill Guimaraes
 
-   Lab #3 - September 8, 2024
+   Lab #6 
 
    I wrote this code myself...
    I did not use AI or copy code from Google or another student
@@ -57,7 +57,15 @@ namespace Area
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            // else { do nothing? }  ** Currently working but needs revision. 
+
         }
 
         private void circleRadio_CheckedChanged(object sender, EventArgs e)
