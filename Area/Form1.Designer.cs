@@ -48,6 +48,8 @@
             squareToolStripMenuItem = new ToolStripMenuItem();
             clearToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
+            comboBox1 = new ComboBox();
+            listBox1 = new ListBox();
             fileMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -117,7 +119,7 @@
             // circleRadio
             // 
             circleRadio.AutoSize = true;
-            circleRadio.Location = new Point(185, 236);
+            circleRadio.Location = new Point(258, 191);
             circleRadio.Name = "circleRadio";
             circleRadio.Size = new Size(64, 24);
             circleRadio.TabIndex = 7;
@@ -129,7 +131,7 @@
             // squareRadio
             // 
             squareRadio.AutoSize = true;
-            squareRadio.Location = new Point(185, 176);
+            squareRadio.Location = new Point(258, 157);
             squareRadio.Name = "squareRadio";
             squareRadio.Size = new Size(73, 24);
             squareRadio.TabIndex = 8;
@@ -141,7 +143,7 @@
             // rectRadio
             // 
             rectRadio.AutoSize = true;
-            rectRadio.Location = new Point(185, 118);
+            rectRadio.Location = new Point(258, 116);
             rectRadio.Name = "rectRadio";
             rectRadio.Size = new Size(93, 24);
             rectRadio.TabIndex = 9;
@@ -236,11 +238,33 @@
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Rectangle", "Circle", "Square" });
+            comboBox1.Location = new Point(48, 116);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(145, 27);
+            comboBox1.TabIndex = 18;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.Items.AddRange(new object[] { "Rectangle ", "Circle", "Square" });
+            listBox1.Location = new Point(49, 157);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(144, 99);
+            listBox1.TabIndex = 19;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 503);
+            Controls.Add(listBox1);
+            Controls.Add(comboBox1);
             Controls.Add(topLabel);
             Controls.Add(topTxtBox);
             Controls.Add(areaTxtBox);
@@ -294,5 +318,7 @@
         private ToolStripMenuItem squareToolStripMenuItem;
         private ToolStripMenuItem clearToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
+        private ComboBox comboBox1;
+        private ListBox listBox1;
     }
 }

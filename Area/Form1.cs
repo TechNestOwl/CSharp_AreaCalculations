@@ -16,10 +16,24 @@ namespace Area
 {
     public partial class Form1 : Form
     {
+        void ClearAll()
+        {
+            rectRadio.Checked = false;
+            squareRadio.Checked = false;
+            circleRadio.Checked = false;
+            areaTitle.Text = "Area";
+
+            areaTxtBox.Clear();
+            widthTxtBox.Clear();
+            topTxtBox.Clear();
+        }
         public Form1()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+
+          
+
         }
 
         private void rectRadio_CheckedChanged(object sender, EventArgs e)
@@ -81,14 +95,7 @@ namespace Area
 
         private void clearBtn_Click(object sender, EventArgs e)
         {
-            rectRadio.Checked = false;
-            squareRadio.Checked = false;
-            circleRadio.Checked = false;
-            areaTitle.Text = "Area";
-
-            areaTxtBox.Clear();
-            widthTxtBox.Clear();
-            topTxtBox.Clear();
+            ClearAll();
 
         }
 
@@ -173,28 +180,38 @@ namespace Area
             squareRadio.Checked = true;
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            // else { do nothing? }  ** Currently working but needs revision. 
-        }
-
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //rectRadio.Checked = false;
+            //squareRadio.Checked = false;
+            //circleRadio.Checked = false;
+            //areaTitle.Text = "Area";
+            //areaTxtBox.Clear();
+            //widthTxtBox.Clear();
+            //topTxtBox.Clear();
 
-            rectRadio.Checked = false;
-            squareRadio.Checked = false;
-            circleRadio.Checked = false;
-            areaTitle.Text = "Area";
 
-            areaTxtBox.Clear();
-            widthTxtBox.Clear();
-            topTxtBox.Clear();
+            // simpler than above copy/paste method 
+            //clearBtn.PerformClick();
+
+            //redunant code above. 
+
+            //invoking new global function - ClearAll()
+            ClearAll();
+        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            exitBtn.PerformClick();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
