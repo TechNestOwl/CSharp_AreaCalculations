@@ -158,5 +158,43 @@ namespace Area
             }
 
         }
+        private void rectangleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rectRadio.Checked = true;
+        }
+
+        private void circleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            circleRadio.Checked = true;
+        }
+
+        private void squareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            squareRadio.Checked = true;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            // else { do nothing? }  ** Currently working but needs revision. 
+        }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            rectRadio.Checked = false;
+            squareRadio.Checked = false;
+            circleRadio.Checked = false;
+            areaTitle.Text = "Area";
+
+            areaTxtBox.Clear();
+            widthTxtBox.Clear();
+            topTxtBox.Clear();
+        }
     }
 }

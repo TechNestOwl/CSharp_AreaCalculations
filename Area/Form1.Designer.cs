@@ -206,30 +206,35 @@
             rectangleToolStripMenuItem.Name = "rectangleToolStripMenuItem";
             rectangleToolStripMenuItem.Size = new Size(157, 26);
             rectangleToolStripMenuItem.Text = "Rectangle";
+            rectangleToolStripMenuItem.Click += rectangleToolStripMenuItem_Click;
             // 
             // circleToolStripMenuItem
             // 
             circleToolStripMenuItem.Name = "circleToolStripMenuItem";
             circleToolStripMenuItem.Size = new Size(157, 26);
             circleToolStripMenuItem.Text = "Circle";
+            circleToolStripMenuItem.Click += circleToolStripMenuItem_Click;
             // 
             // squareToolStripMenuItem
             // 
             squareToolStripMenuItem.Name = "squareToolStripMenuItem";
             squareToolStripMenuItem.Size = new Size(157, 26);
             squareToolStripMenuItem.Text = "Square";
+            squareToolStripMenuItem.Click += squareToolStripMenuItem_Click;
             // 
             // clearToolStripMenuItem
             // 
             clearToolStripMenuItem.Name = "clearToolStripMenuItem";
             clearToolStripMenuItem.Size = new Size(57, 24);
             clearToolStripMenuItem.Text = "Clear";
+            clearToolStripMenuItem.Click += clearToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             exitToolStripMenuItem.Size = new Size(47, 24);
             exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // Form1
             // 
