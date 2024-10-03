@@ -36,6 +36,15 @@ namespace Area
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void areaTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void rectRadio_CheckedChanged(object sender, EventArgs e)
         {
             if (rectRadio.Checked == true)
@@ -48,15 +57,6 @@ namespace Area
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void areaTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void squareRadio_CheckedChanged(object sender, EventArgs e)
         {
             if (squareRadio.Checked == true)
@@ -64,6 +64,18 @@ namespace Area
                 Console.WriteLine("square checked");
                 areaTitle.Text = "Square";
                 topLabel.Text = "Sides";
+                widthTxtBox.Visible = false;
+                witdthLbl.Visible = false;
+            }
+        }
+
+
+        private void circleRadio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (circleRadio.Checked == true)
+            {
+                areaTitle.Text = "Circle";
+                topLabel.Text = "Radius";
                 widthTxtBox.Visible = false;
                 witdthLbl.Visible = false;
             }
@@ -80,17 +92,6 @@ namespace Area
             }
             // else { do nothing? }  ** Currently working but needs revision. 
 
-        }
-
-        private void circleRadio_CheckedChanged(object sender, EventArgs e)
-        {
-            if (circleRadio.Checked == true)
-            {
-                areaTitle.Text = "Circle";
-                topLabel.Text = "Radius";
-                widthTxtBox.Visible = false;
-                witdthLbl.Visible = false;
-            }
         }
 
         private void clearBtn_Click(object sender, EventArgs e)
