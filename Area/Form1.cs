@@ -27,6 +27,28 @@ namespace Area
             widthTxtBox.Clear();
             topTxtBox.Clear();
         }
+        public string calculateRectangle(int arg1, int arg2)
+        {
+            double area = arg1 * arg2;
+            string areaStr = area.ToString();
+
+            return areaStr;
+        }
+        public string calculateRaidus(int value)
+        {
+            //calculate area A =  3.14159 * ( value * value );
+            double area = (value * value) * 3.14159;
+            string result = area.ToString();
+
+            return result;
+        }
+        public string calculateSqure(int value)
+        {
+            int areaNum = value * value;
+            string area = areaNum.ToString();
+
+            return area; 
+        }
         public Form1()
         {
             InitializeComponent();
@@ -127,16 +149,9 @@ namespace Area
             {
                 //grabbing user input for radius
                 string value = topTxtBox.Text;
-                double radius = double.Parse(value);
+                int userInput = int.Parse(value);
 
-
-                //calculate area A =  3.14159 * ( value * value );
-                double area = (radius * radius) * 3.14159;
-
-                //convert bact to string, assign to areaTxtBox
-                string areaStr = area.ToString();
-                areaTxtBox.Text = areaStr;
-                Console.WriteLine(areaStr);
+                areaTxtBox.Text = calculateRaidus(userInput);
             }
             //Rectangle Area
             if (rectRadio.Checked)
@@ -144,25 +159,21 @@ namespace Area
                 string hValue = topTxtBox.Text;
                 string wValue = widthTxtBox.Text;
 
-                double heightValue = double.Parse(hValue);
-                double widthValue = double.Parse(wValue);
+                int heightValue = int.Parse(hValue);
+                int widthValue = int.Parse(wValue);
 
-                double area = widthValue * heightValue;
-                string areaStr = area.ToString();
 
-                areaTxtBox.Text = areaStr;
+                areaTxtBox.Text = calculateRectangle(heightValue,widthValue);
             }
             //Square Area
 
             if (squareRadio.Checked)
             {
                 string sideValue = topTxtBox.Text;
-                double side = double.Parse(sideValue);
+                int side = int.Parse(sideValue);
 
-                double area = side * side;
-                string areaStr = area.ToString();
 
-                areaTxtBox.Text = areaStr;
+                areaTxtBox.Text = calculateSqure(side);
             }
 
         }
