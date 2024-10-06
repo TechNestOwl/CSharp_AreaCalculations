@@ -207,11 +207,16 @@ namespace Area
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox1.SelectedIndex == 0){ rectRadio.Checked = true;}
+            else if (comboBox1.SelectedIndex == 1) { circleRadio.Checked = true; }
+            else if (comboBox1.SelectedIndex == 2) { squareRadio.Checked = true; }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listBox1.SelectedIndex == 0) { rectRadio.Checked = true; }
+            else if (listBox1.SelectedIndex == 1) { squareRadio.Checked = true; }
+            else if (listBox1.SelectedIndex == 2) { circleRadio.Checked = true; }
 
         }
     }

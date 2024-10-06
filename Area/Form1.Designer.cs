@@ -57,9 +57,9 @@
             // 
             areaTitle.AutoSize = true;
             areaTitle.Font = new Font("Segoe UI", 13.7739134F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            areaTitle.Location = new Point(391, 47);
+            areaTitle.Location = new Point(342, 37);
             areaTitle.Name = "areaTitle";
-            areaTitle.Size = new Size(61, 30);
+            areaTitle.Size = new Size(53, 25);
             areaTitle.TabIndex = 0;
             areaTitle.Text = "Area";
             areaTitle.TextAlign = ContentAlignment.TopCenter;
@@ -68,27 +68,28 @@
             // witdthLbl
             // 
             witdthLbl.AutoSize = true;
-            witdthLbl.Location = new Point(520, 193);
+            witdthLbl.Location = new Point(455, 152);
             witdthLbl.Name = "witdthLbl";
-            witdthLbl.Size = new Size(49, 20);
+            witdthLbl.Size = new Size(39, 15);
             witdthLbl.TabIndex = 2;
             witdthLbl.Text = "Width";
             // 
             // areaLbl
             // 
             areaLbl.AutoSize = true;
-            areaLbl.Location = new Point(279, 325);
+            areaLbl.Location = new Point(244, 257);
             areaLbl.Name = "areaLbl";
-            areaLbl.Size = new Size(40, 20);
+            areaLbl.Size = new Size(31, 15);
             areaLbl.TabIndex = 3;
             areaLbl.Text = "Area";
             // 
             // calcBtn
             // 
             calcBtn.BackColor = Color.LightSkyBlue;
-            calcBtn.Location = new Point(154, 414);
+            calcBtn.Location = new Point(135, 327);
+            calcBtn.Margin = new Padding(3, 2, 3, 2);
             calcBtn.Name = "calcBtn";
-            calcBtn.Size = new Size(95, 28);
+            calcBtn.Size = new Size(83, 22);
             calcBtn.TabIndex = 4;
             calcBtn.Text = "Calc Area";
             calcBtn.UseVisualStyleBackColor = false;
@@ -97,9 +98,10 @@
             // clearBtn
             // 
             clearBtn.BackColor = SystemColors.GradientInactiveCaption;
-            clearBtn.Location = new Point(363, 414);
+            clearBtn.Location = new Point(318, 327);
+            clearBtn.Margin = new Padding(3, 2, 3, 2);
             clearBtn.Name = "clearBtn";
-            clearBtn.Size = new Size(95, 28);
+            clearBtn.Size = new Size(83, 22);
             clearBtn.TabIndex = 5;
             clearBtn.Text = "Clear";
             clearBtn.UseVisualStyleBackColor = false;
@@ -108,9 +110,10 @@
             // exitBtn
             // 
             exitBtn.BackColor = Color.LightSalmon;
-            exitBtn.Location = new Point(590, 414);
+            exitBtn.Location = new Point(516, 327);
+            exitBtn.Margin = new Padding(3, 2, 3, 2);
             exitBtn.Name = "exitBtn";
-            exitBtn.Size = new Size(95, 28);
+            exitBtn.Size = new Size(83, 22);
             exitBtn.TabIndex = 6;
             exitBtn.Text = "Exit";
             exitBtn.UseVisualStyleBackColor = false;
@@ -119,9 +122,10 @@
             // circleRadio
             // 
             circleRadio.AutoSize = true;
-            circleRadio.Location = new Point(258, 191);
+            circleRadio.Location = new Point(226, 151);
+            circleRadio.Margin = new Padding(3, 2, 3, 2);
             circleRadio.Name = "circleRadio";
-            circleRadio.Size = new Size(64, 24);
+            circleRadio.Size = new Size(55, 19);
             circleRadio.TabIndex = 7;
             circleRadio.TabStop = true;
             circleRadio.Text = "Circle";
@@ -131,9 +135,10 @@
             // squareRadio
             // 
             squareRadio.AutoSize = true;
-            squareRadio.Location = new Point(258, 157);
+            squareRadio.Location = new Point(226, 124);
+            squareRadio.Margin = new Padding(3, 2, 3, 2);
             squareRadio.Name = "squareRadio";
-            squareRadio.Size = new Size(73, 24);
+            squareRadio.Size = new Size(61, 19);
             squareRadio.TabIndex = 8;
             squareRadio.TabStop = true;
             squareRadio.Text = "Square";
@@ -143,9 +148,10 @@
             // rectRadio
             // 
             rectRadio.AutoSize = true;
-            rectRadio.Location = new Point(258, 116);
+            rectRadio.Location = new Point(226, 92);
+            rectRadio.Margin = new Padding(3, 2, 3, 2);
             rectRadio.Name = "rectRadio";
-            rectRadio.Size = new Size(93, 24);
+            rectRadio.Size = new Size(77, 19);
             rectRadio.TabIndex = 9;
             rectRadio.TabStop = true;
             rectRadio.Text = "Rectangle";
@@ -154,34 +160,37 @@
             // 
             // widthTxtBox
             // 
-            widthTxtBox.Location = new Point(590, 187);
+            widthTxtBox.Location = new Point(516, 148);
+            widthTxtBox.Margin = new Padding(3, 2, 3, 2);
             widthTxtBox.Name = "widthTxtBox";
-            widthTxtBox.Size = new Size(125, 26);
+            widthTxtBox.Size = new Size(110, 23);
             widthTxtBox.TabIndex = 11;
             widthTxtBox.TextChanged += widthTxtBox_TextChanged;
             // 
             // areaTxtBox
             // 
-            areaTxtBox.Location = new Point(363, 322);
+            areaTxtBox.Location = new Point(318, 254);
+            areaTxtBox.Margin = new Padding(3, 2, 3, 2);
             areaTxtBox.Name = "areaTxtBox";
-            areaTxtBox.Size = new Size(125, 26);
+            areaTxtBox.Size = new Size(110, 23);
             areaTxtBox.TabIndex = 12;
             areaTxtBox.TextChanged += areaTxtBox_TextChanged;
             // 
             // topTxtBox
             // 
-            topTxtBox.Location = new Point(590, 116);
+            topTxtBox.Location = new Point(516, 92);
+            topTxtBox.Margin = new Padding(3, 2, 3, 2);
             topTxtBox.Name = "topTxtBox";
-            topTxtBox.Size = new Size(120, 26);
+            topTxtBox.Size = new Size(106, 23);
             topTxtBox.TabIndex = 15;
             topTxtBox.TextChanged += topTxtBox_TextChanged;
             // 
             // topLabel
             // 
             topLabel.AutoSize = true;
-            topLabel.Location = new Point(515, 116);
+            topLabel.Location = new Point(451, 92);
             topLabel.Name = "topLabel";
-            topLabel.Size = new Size(54, 20);
+            topLabel.Size = new Size(43, 15);
             topLabel.TabIndex = 16;
             topLabel.Text = "Height";
             topLabel.Click += topLabel_Click;
@@ -192,7 +201,8 @@
             fileMenu.Items.AddRange(new ToolStripItem[] { choiceToolStripMenuItem, clearToolStripMenuItem, exitToolStripMenuItem });
             fileMenu.Location = new Point(0, 0);
             fileMenu.Name = "fileMenu";
-            fileMenu.Size = new Size(914, 28);
+            fileMenu.Padding = new Padding(5, 2, 0, 2);
+            fileMenu.Size = new Size(800, 24);
             fileMenu.TabIndex = 17;
             fileMenu.Text = "File Menu";
             // 
@@ -200,41 +210,41 @@
             // 
             choiceToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { rectangleToolStripMenuItem, circleToolStripMenuItem, squareToolStripMenuItem });
             choiceToolStripMenuItem.Name = "choiceToolStripMenuItem";
-            choiceToolStripMenuItem.Size = new Size(68, 24);
+            choiceToolStripMenuItem.Size = new Size(56, 20);
             choiceToolStripMenuItem.Text = "Choice";
             // 
             // rectangleToolStripMenuItem
             // 
             rectangleToolStripMenuItem.Name = "rectangleToolStripMenuItem";
-            rectangleToolStripMenuItem.Size = new Size(157, 26);
+            rectangleToolStripMenuItem.Size = new Size(126, 22);
             rectangleToolStripMenuItem.Text = "Rectangle";
             rectangleToolStripMenuItem.Click += rectangleToolStripMenuItem_Click;
             // 
             // circleToolStripMenuItem
             // 
             circleToolStripMenuItem.Name = "circleToolStripMenuItem";
-            circleToolStripMenuItem.Size = new Size(157, 26);
+            circleToolStripMenuItem.Size = new Size(126, 22);
             circleToolStripMenuItem.Text = "Circle";
             circleToolStripMenuItem.Click += circleToolStripMenuItem_Click;
             // 
             // squareToolStripMenuItem
             // 
             squareToolStripMenuItem.Name = "squareToolStripMenuItem";
-            squareToolStripMenuItem.Size = new Size(157, 26);
+            squareToolStripMenuItem.Size = new Size(126, 22);
             squareToolStripMenuItem.Text = "Square";
             squareToolStripMenuItem.Click += squareToolStripMenuItem_Click;
             // 
             // clearToolStripMenuItem
             // 
             clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            clearToolStripMenuItem.Size = new Size(57, 24);
+            clearToolStripMenuItem.Size = new Size(46, 20);
             clearToolStripMenuItem.Text = "Clear";
             clearToolStripMenuItem.Click += clearToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(47, 24);
+            exitToolStripMenuItem.Size = new Size(38, 20);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -242,27 +252,30 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Rectangle", "Circle", "Square" });
-            comboBox1.Location = new Point(48, 116);
+            comboBox1.Location = new Point(42, 92);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(145, 27);
+            comboBox1.Size = new Size(127, 23);
             comboBox1.TabIndex = 18;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Items.AddRange(new object[] { "Rectangle ", "Circle", "Square" });
-            listBox1.Location = new Point(49, 157);
+            listBox1.ItemHeight = 15;
+            listBox1.Items.AddRange(new object[] { "Rectangle ", "Square", "Circle" });
+            listBox1.Location = new Point(43, 124);
+            listBox1.Margin = new Padding(3, 2, 3, 2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(144, 99);
+            listBox1.Size = new Size(126, 79);
             listBox1.TabIndex = 19;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 503);
+            ClientSize = new Size(800, 397);
             Controls.Add(listBox1);
             Controls.Add(comboBox1);
             Controls.Add(topLabel);
@@ -280,6 +293,7 @@
             Controls.Add(areaTitle);
             Controls.Add(fileMenu);
             MainMenuStrip = fileMenu;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "C# Area Form";
             Load += Form1_Load;
